@@ -1,0 +1,8 @@
+Write a query to find the names of the top 3 players who have won matches, including their scores.
+
+Expected Output Columns:
+
+player_name	score
+
+Query-
+select player_name, score from Players order by score desc limit 3;
