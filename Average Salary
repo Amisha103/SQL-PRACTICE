@@ -1,0 +1,4 @@
+Write a query to calculate the average salary for all companies. Rename the column as avg_salary.
+
+Query-
+SELECT avg(Salary) as avg_salary from Works;
