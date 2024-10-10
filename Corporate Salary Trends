@@ -1,0 +1,9 @@
+Write a query to check which companies have an average salary greater than 70,000.
+
+Expected Output Columns:
+
+company	average_salary
+
+Query-
+SELECT company, avg(salary) as average_salary from Employees 
+group by company having avg(salary) > 70000;
