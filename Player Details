@@ -1,0 +1,9 @@
+Task
+Write a query to retrieve the details of the last five matches played, 
+including the match ID, the names of the players who participated, 
+the name of the winning player, and their respective scores.
+
+Query-
+SELECT m.match_id, m.player1, m.player2, m.winner, m.match_date, p.Score
+FROM Matches m left join Players p on m.Winner = p.player_name order by 
+m.match_date DESC Limit 5;
