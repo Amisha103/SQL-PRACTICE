@@ -1,0 +1,10 @@
+Display the total amount of patients for each province. Order by descending.
+
+Query-
+SELECT
+p.province_name, count(*) as patient_count from
+province_names p, 
+patients p1
+where p.province_id = p1.province_id
+group by p.province_id
+order by patient_count desc;
